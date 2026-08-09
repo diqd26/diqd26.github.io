@@ -21,9 +21,7 @@
 
     <nav class="max-w-6xl mx-auto px-6 py-6 w-full flex justify-between items-center">
         <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-600 to-amber-300 flex items-center justify-center font-bold text-slate-950 text-lg shadow-md">
-                IQD
-            </div>
+            <img src="https://raw.githubusercontent.com/diqd26/IQDwebsite/refs/heads/main/IQD%20logo.png" alt="IQD Logo" class="w-10 h-10 rounded-full object-cover border border-amber-500/30 shadow-md">
             <span class="text-lg font-bold tracking-wider text-white">Digital IQD</span>
         </div>
         <div class="hidden md:flex items-center gap-8 text-sm text-slate-300">
@@ -34,6 +32,84 @@
         <div>
             <a href="https://app.uniswap.org/#/swap?outputCurrency=0xd71ed2432adf3f7e35a20a4145fbcfba58ce3118" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-sm shadow-lg shadow-amber-500/20 transition">
                 شراء على Uniswap
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 text-center flex-grow flex flex-col items-center justify-center">
+        
+        <div class="mb-8">
+            <img src="https://raw.githubusercontent.com/diqd26/IQDwebsite/refs/heads/main/IQD%20logo.png" alt="IQD Logo Coin" class="w-28 h-28 md:w-36 md:h-36 mx-auto rounded-full object-cover shadow-2xl border-2 border-amber-500/40 glow-gold animate-pulse">
+        </div>
+
+        <div class="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-800 px-4 py-1.5 rounded-full text-xs text-amber-400 mb-8 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            مربوط بنسبة 1:1 مع قيمة السوق المحلي على شبكة الإيثريوم
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-white leading-tight">
+            الدينار العراقي الرقمي <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">(IQD)</span>
+        </h1>
+        <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            عملة رقمية مستقرة مصممة لتوفير أعلى معايير الشفافية، والسيولة الفورية، والتوافق الكامل مع محافظ Web3 واللامركزية العالمية.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-16 w-full justify-center">
+            <a href="https://app.uniswap.org/#/swap?outputCurrency=0xd71ed2432adf3f7e35a20a4145fbcfba58ce3118" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-amber-500/10 transition flex items-center justify-center gap-2">
+                🔄 تداول الآن على Uniswap
+            </a>
+            <a href="https://dexscreener.com/ethereum/0x46663d51af81dcf624fa9dd64e08b17f0778ad16ff7e04689e83c18e4ce6d93a" target="_blank" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold px-8 py-4 rounded-xl border border-slate-800 transition flex items-center justify-center gap-2">
+                📈 تتبع السعر (DexScreener)
+            </a>
+        </div>
+
+        <div id="contract" class="w-full bg-slate-900/60 border border-slate-800/80 p-6 rounded-2xl max-w-2xl text-right glow-gold backdrop-blur-xl mb-20">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">عنوان العقد الرسمي (ERC20 Contract)</span>
+                <span class="text-xs text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded">Ethereum Mainnet</span>
+            </div>
+            <div class="flex items-center justify-between bg-slate-950 p-3.5 rounded-xl border border-slate-800 font-mono text-xs md:text-sm text-amber-300 overflow-x-auto shadow-inner">
+                <span id="contractAddr">0xd71ed2432adf3f7e35a20a4145fbcfba58ce3118</span>
+                <button onclick="navigator.clipboard.writeText('0xd71ed2432adf3f7e35a20a4145fbcfba58ce3118'); alert('تم نسخ عنوان العقد بنجاح!');" class="bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 px-4 py-1.5 rounded-lg text-xs font-sans transition cursor-pointer flex-shrink-0 mr-3">نسخ</button>
+            </div>
+        </div>
+
+        <div id="features" class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-right mb-12">
+            <div class="bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4 font-bold">💎</div>
+                <h3 class="text-white font-bold text-lg mb-2">استقرار بنسبة 1:1</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">ارتباط دقيق يعكس القيمة المحلية مع توفير أمان الأصول الرقمية على بلوكتشين إيثريوم.</p>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4 font-bold">⚡</div>
+                <h3 class="text-white font-bold text-lg mb-2">سيولة فورية لامركزية</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">متاح للتبادل الفوري عبر بروتوكول Uniswap دون الحاجة لوسطاء تقلديين.</p>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4 font-bold">🔒</div>
+                <h3 class="text-white font-bold text-lg mb-2">أمان وموثوقية عالية</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">مبني وفق معايير ERC20 القياسية والمتوافقة مع كافة محافظ Web3 المعتمدة عالمياً.</p>
+            </div>
+        </div>
+
+        <div class="w-full max-w-xl border-t border-slate-900 pt-10">
+            <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">قنوات التواصل الرسمية</h3>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="https://t.me/diqd26" target="_blank" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 px-4 py-2 rounded-xl text-xs text-slate-300 transition">Telegram</a>
+                <a href="https://x.com/iqd26" target="_blank" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 px-4 py-2 rounded-xl text-xs text-slate-300 transition">X (Twitter)</a>
+                <a href="https://www.tiktok.com/@diqd26" target="_blank" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 px-4 py-2 rounded-xl text-xs text-slate-300 transition">TikTok</a>
+                <a href="https://github.com/diqd26" target="_blank" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 px-4 py-2 rounded-xl text-xs text-slate-300 transition">GitHub</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Digital Iraqi Dinar (IQD). جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
             </a>
         </div>
     </nav>
